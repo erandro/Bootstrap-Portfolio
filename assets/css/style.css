@@ -1,0 +1,72 @@
+body {
+    background-image: url(http://www.fjordloberne.dk/billeder/baggrund/patterns/33.png);
+    background-repeat: repeat;
+}
+
+/* Navbar */
+
+.header-back {
+    background-color: white;
+    width: 100%;
+}
+.navbar {
+    display: block;
+    padding: 0 1rem;
+    max-width: 960px;
+}
+.brand-color {
+    color: white;
+}
+.navbar-brand {
+    padding-bottom: 0;
+    text-align: center;
+}
+.brand-back {
+    background-color: blueviolet;
+    line-height: 80px;
+}
+.nav-item {
+    text-align: center;
+    line-height: 80px;
+}
+
+/* Info */
+
+.info {
+    max-width: 960px;
+    background-color: white;
+    margin-top: 25px;
+    background-color: rgb(255, 255, 255);
+    min-height: 430px;
+    padding-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.title-underline {
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: blue;
+}
+
+/* About */
+.About img {
+    padding: 20px 20px 20px 0;
+    width: 200px;
+    height: 200px;
+    justify-content: flex-start;
+}
+@media (max-width: 576px) {
+    .About img {
+        /* padding: 20px 20px 20px 0; */
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+    }
+}
+
+
+/* .container {
+    width: 960px;
+} */
+/* .nav {
+    background-color: rgb(255, 255, 255);
+} */
