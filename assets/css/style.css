@@ -1,10 +1,37 @@
 body {
     background-image: url(http://www.fjordloberne.dk/billeder/baggrund/patterns/33.png);
     background-repeat: repeat;
+    font-family: 'Merriweather', serif;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+all colors {
+    body background-color: rgb(214, 214, 214);
+
+    header info background-color: rgb(255, 255, 255);
+    first_title h6 span color: rgb(255, 255, 255);
+
+    border-color: rgb(140, 0, 175);
+    first_title background-color: rgb(140, 0, 175);
+    second_title a:hover color: rgb(140, 0, 175);
+
+    a p form color: rgb(141, 126, 144);
+    project_# footer_back background-color: rgb(141, 126, 144);
+
+    span background-color: rgb(168, 93, 187);
 }
 
 /* Navbar */
 
+.container {
+    width: auto;
+}
+.navbar-light .navbar-brand {
+    color: white;
+    font-size: 2.5rem;
+}
 .header-back {
     background-color: white;
     width: 100%;
@@ -14,6 +41,9 @@ body {
     padding: 0 1rem;
     max-width: 960px;
 }
+.navbar-nav {
+    flex-direction: row;
+}
 .brand-color {
     color: white;
 }
@@ -22,12 +52,38 @@ body {
     text-align: center;
 }
 .brand-back {
-    background-color: blueviolet;
+    background-color: rgb(140, 0, 175);
     line-height: 80px;
 }
 .nav-item {
     text-align: center;
     line-height: 80px;
+}
+@media (max-width: 768px) {
+    .col-sm-disapper {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .row-md-disapper {
+        display: none;
+    }
+    .screen-30 {
+        width: 33.3333%;
+  
+        line-height: 40px;
+    }
+    .nav-link {
+        padding: .5rem 1rem;
+    }
+}
+a {
+   color: rgba(0,0,0,.5);
+}
+.screen-30 {
+    width: 33.3333%;
+
+    line-height: 40px;
 }
 
 /* Info */
@@ -35,38 +91,49 @@ body {
 .info {
     max-width: 960px;
     background-color: white;
-    margin-top: 25px;
+    margin: 1rem auto 1rem auto;
     background-color: rgb(255, 255, 255);
     min-height: 430px;
     padding-bottom: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.title-underline {
+@media (max-width: 992px) {
+    .info {
+    margin: 1rem 1rem  1rem 1rem;
+    }
+}
+.underline {
     border-bottom: solid;
     border-width: 2px;
-    border-color: blue;
+    border-color:rgb(140, 0, 175);
 }
 
 /* About */
+
+.second_title {
+    color: rgb(140, 0, 175);
+    padding: 2rem 0 2rem 0;
+}
 .About img {
     padding: 20px 20px 20px 0;
     width: 200px;
     height: 200px;
     justify-content: flex-start;
+    /* object-fit: cover; */
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .About img {
         /* padding: 20px 20px 20px 0; */
+
         width: 100%;
         height: auto;
         justify-content: flex-start;
     }
 }
 
+/* Footer */
 
-/* .container {
-    width: 960px;
-} */
-/* .nav {
-    background-color: rgb(255, 255, 255);
-} */
+footer {
+    bottom: 0;
+    position: sticky;
+}

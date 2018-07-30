@@ -3,60 +3,71 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Bootsrtap Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href=".\assets\css\reset.css" /> -->
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+    <!-- scc -->
     <link rel="stylesheet" type="text/css" media="screen" href=".\assets\css\style.css" />
-    <script src="main.js"></script>
+
 </head>
 <body>
 
-<!-- Fucking navbar - need to be contained -->
-
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Eran Dromy</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link active" href="#">About <span class="sr-only">(current</span></a>
-                <a class="nav-item nav-link" href="#">Protfolio</a>
-                <a class="nav-item nav-link" href="#">Contect</a>
-              </div>
-            </div>
-        </nav> -->
-
     <!-- Navbar -->
+
     <div class="header-back">
         <div class="container navbar navbar-expand-md navbar-light">
 
-            <div class="row">
-              <div class="col-md-4 col-sm-12 navbar brand-back">
-                <h1 class="navbar-brand ert">Eran Dromy</h1>
-              </div>
-              <div class="col-md-4 navbar col-sm-0">
-              </div>
-              <div class="col-md-4 navbar col-sm-12">
-                  <div class="row navbar-nav">
-                    <div class="col-md-4 col-sm-4">
-                            <a class="nav-item nav-link active" href="#">About<span class="sr-only">(current</span></a>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                            <a class="nav-item nav-link" href="#">Protfolio</a>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                            <a class="nav-item nav-link" href="#">Contect</a>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <div class="row">
+            <!--++ Navbar top ++-->
+
+            <div class="row underline">
                 
+                <div class="col-md-4 col-sm-12 navbar brand-back">
+                    <h1 class="navbar-brand ert">Eran Dromy</h1>
+                </div>
+
+                <div class="col-md-4 navbar col-sm-disapper">
+                </div>
+
+                <div class="col-md-4 navbar col-sm-disapper">
+                    <div class="row navbar-nav">
+
+                        <div class="col-md-4">
+                            <a class="nav-item nav-link active" href="#">About<span class="sr-only">(current</span></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="nav-item nav-link" href="#">Protfolio</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="nav-item nav-link" href="#">Contect</a>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
+
+            <!--++ Navbar bottom ++-->
+
+            <div class="row row-md-disapper color underline">
+                <div class="col-sm-4 screen-30">
+                    <a class="nav-item nav-link active screen-30" href="#">About<span class="sr-only"(current</span></a>
+                </div>
+                <div class="col-sm-4 screen-30">
+                    <a class="nav-item nav-link screen-30" href="#">Protfolio</a>
+                </div>
+                <div class="col-sm-4 screen-30">
+                    <a class="nav-item nav-link screen-30" href="#">Contect</a>
+                </div>
+            </div>
+
         </div>
+        
     </div>
 
     <!-- About me -->
@@ -64,10 +75,13 @@
     <div class="container info">
         <div class="row">
             <div class="col-sm-12">
-                <div class="row title-underline">
-                    <h1>About</h1>
+                <div class="row ">
+                    <div class="col-sm-12">
+                        <h1 class="underline second_title">About</h1>
+                    </div>
                 </div>
                 <div class="row About">
+                    <div class="col-sm-12">
                     <img src=".\assets\images\Eran.png" alt="picture of eran dromy">
                     <p>
                         Originally from Tel-Aviv, Israel, now living in Evanston, IL.
@@ -79,11 +93,21 @@
                     <p>
                         I served as a Military Commander and as a Company instructor for Special Forcesat the Israel Defense Forces, Infantry (2005-2008).
                     </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Footer -->
+        
+    <footer>   
+    <div class="card text-center">
+        <div class="card-footer text-muted">
+        Copyright &#169
+        </div>
+    </div>
+    </footer> 
 
 </body>
 </html>
