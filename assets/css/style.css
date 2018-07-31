@@ -4,6 +4,7 @@
     body {
         background-color: rgb(214, 214, 214);
         font-family: 'Merriweather', serif;
+        color: rgb(65, 55, 65);
     }
     h1 {
         font-size: 2rem;
@@ -108,13 +109,13 @@
         margin: 1rem 1rem  1rem 1rem;
         }
     }
-
-/*+++ About +++*/
-
     .second_title {
         color: rgb(140, 0, 175);
         padding: 2rem 0 2rem 0;
     }
+
+/*+++ About +++*/
+
     .About img {
         padding: 20px 20px 20px 0;
         width: 200px;
@@ -123,11 +124,67 @@
     @media (max-width: 768px) {
         .About img {
             padding: 20px 0 20px 0;
-            width: 100%;;
+            width: 100%;
         }
     }
     p:first-child {
         padding-top : 20px;
+    }
+
+/*+++ Portfolio +++*/
+
+    #project_1, #project_2, #project_3,
+    #project_4, #project_5, #project_6 {
+        background-color: rgb(141, 126, 144);
+        height: 200px;
+        margin-bottom: 20px;
+        background-size: cover;     
+    }
+    #project_1 {
+        background-image: url("http://www.wnnca.org/couch/uploads/image/plants-animals/birds/thumb300x200/White-crowned-Sparrow.jpg");
+    }
+    #project_2 {
+        background-image: url("http://www.dannygreenphotography.com/media/Moorland%20BOP%20guest%20gallery%20images/Ron%20Brown%20Golden%20Eagle-.jpg");
+    }
+    #project_3 {
+        background-image: url("http://www.pgecurrents.com/wp-content/uploads/2013/02/300x200_Lights-Out-for-Birds-Western-Tanager.jpg");
+    }
+    #project_4 {
+        background-image: url("http://www.dannygreenphotography.com/media/Moorland%20BOP%20guest%20gallery%20images/Ron%20Brown%20Peregrine-3590.jpg");
+    }
+    #project_5 {
+        background-image: url("https://ssl.c.photoshelter.com/img-get/I0000XzT1KKiKmcY/s/860/860/Chris%20Morton%20Hungarian%20Spring%20Birds%203.jpg");
+    }
+    #project_6 {
+        background-image: url("https://kidsanimalsfacts.com/wp-content/uploads/2017/10/Yellow-shouldered_Blackbird.jpg");
+    }
+    .project-label {
+        padding: 5px 5px 5px 50px;
+        background-color: rgb(168, 93, 187);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        position: relative;
+        right: 5px;
+        top: 160px;
+    }
+
+/*+++ Contact +++*/
+
+    .send-btn { /* send botton */
+        color: #fff;
+        background-color: rgb(140, 0, 175);
+        border: 2px solid rgb(168, 93, 187);
+        width: 100%;
+    }
+    .send-btn:not(:disabled):not(.disabled):active { /* send botton while clicking */
+        background-color: rgb(168, 93, 187);
+        border-color: rgb(140, 0, 175);
+    }
+    .send-btn:hover { /* send botton after clicking */
+        background-color: rgb(168, 93, 187);
+        border-color: rgb(140, 0, 175);
     }
 
 /*+++ Footer +++*/
