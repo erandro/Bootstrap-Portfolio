@@ -1,139 +1,145 @@
-body {
-    background-image: url(http://www.fjordloberne.dk/billeder/baggrund/patterns/33.png);
-    background-repeat: repeat;
-    font-family: 'Merriweather', serif;
-}
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-all colors {
-    body background-color: rgb(214, 214, 214);
 
-    header info background-color: rgb(255, 255, 255);
-    first_title h6 span color: rgb(255, 255, 255);
+/*+++ General +++*/
 
-    border-color: rgb(140, 0, 175);
-    first_title background-color: rgb(140, 0, 175);
-    second_title a:hover color: rgb(140, 0, 175);
-
-    a p form color: rgb(141, 126, 144);
-    project_# footer_back background-color: rgb(141, 126, 144);
-
-    span background-color: rgb(168, 93, 187);
-}
-
-/* Navbar */
-
-.container {
-    width: auto;
-}
-.navbar-light .navbar-brand {
-    color: white;
-    font-size: 2.5rem;
-}
-.header-back {
-    background-color: white;
-    width: 100%;
-}
-.navbar {
-    display: block;
-    padding: 0 1rem;
-    max-width: 960px;
-}
-.navbar-nav {
-    flex-direction: row;
-}
-.brand-color {
-    color: white;
-}
-.navbar-brand {
-    padding-bottom: 0;
-    text-align: center;
-}
-.brand-back {
-    background-color: rgb(140, 0, 175);
-    line-height: 80px;
-}
-.nav-item {
-    text-align: center;
-    line-height: 80px;
-}
-@media (max-width: 768px) {
-    .col-sm-disapper {
-        display: none;
+    body {
+        background-color: rgb(214, 214, 214);
+        font-family: 'Merriweather', serif;
     }
-}
-@media (min-width: 768px) {
-    .row-md-disapper {
-        display: none;
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
     }
-    .screen-30 {
-        width: 33.3333%;
-  
-        line-height: 40px;
+    /*+ colors for futer pages +*/
+    futer pages colors {
+        form color: rgb(141, 126, 144);
+        project_# background-color: rgb(141, 126, 144);
+        span background-color: rgb(168, 93, 187);
     }
-    .nav-link {
-        padding: .5rem 1rem;
+
+/*+++ Navbar +++*/
+
+    /*+ header +*/
+
+        .header-back { /* background for header */
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+        }
+        .navbar { /* fixing the Navbar */
+            display: block;
+            padding: 0 1rem;
+            max-width: 960px;
+        }
+        .underline { /* used inside the info as well */
+            border-bottom: 2px solid rgb(140, 0, 175);
+        }
+
+    /*+ brand +*/
+    
+        .brand-back {
+            background-color: rgb(140, 0, 175);
+            line-height: 80px;
+        }
+        .navbar-light .navbar-brand {
+            color: rgb(255, 255, 255);
+            font-size: 2rem;
+        }
+        .navbar-brand {
+            padding-bottom: 0;
+            text-align: center;
+            display: block;
+        }
+
+    /*+ items +*/
+
+        .screen-30 {
+            width: 33.3333%;
+        }
+        a {
+            color: rgb(141, 126, 144);
+        }
+        a:hover {
+            color: rgb(140, 0, 175);
+        }
+        .active {
+            color: rgb(140, 0, 175);
+        }
+        .nav-item {
+            text-align: center;
+        }
+        .big-item {
+            line-height: 80px;
+            font-weight: bold;
+        }
+        .small-item {
+            line-height: 40px;
+            font-weight: bold;
+        }
+    
+    /*+ fixing the Navbar when screen change +*/
+
+        @media (max-width: 768px) {
+            .col-sm-disapper {
+                display: none;
+            }
+        }
+        @media (min-width: 768px) {
+            .row-md-disapper {
+                display: none;
+            }
+            .nav-link {
+                padding: .5rem 1rem;
+            }
+        }
+
+/*+++ Info +++*/
+
+    .container {
+        width: auto;
     }
-}
-a {
-   color: rgba(0,0,0,.5);
-}
-.screen-30 {
-    width: 33.3333%;
-
-    line-height: 40px;
-}
-
-/* Info */
-
-.info {
-    max-width: 960px;
-    background-color: white;
-    margin: 1rem auto 1rem auto;
-    background-color: rgb(255, 255, 255);
-    min-height: 430px;
-    padding-bottom: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-@media (max-width: 992px) {
     .info {
-    margin: 1rem 1rem  1rem 1rem;
+        max-width: 960px;
+        background-color: rgb(255, 255, 255);
+        margin: 1rem auto 1rem auto;
+        min-height: 400px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-}
-.underline {
-    border-bottom: solid;
-    border-width: 2px;
-    border-color:rgb(140, 0, 175);
-}
+    @media (max-width: 992px) {
+        .info {
+        margin: 1rem 1rem  1rem 1rem;
+        }
+    }
 
-/* About */
+/*+++ About +++*/
 
-.second_title {
-    color: rgb(140, 0, 175);
-    padding: 2rem 0 2rem 0;
-}
-.About img {
-    padding: 20px 20px 20px 0;
-    width: 200px;
-    height: 200px;
-    justify-content: flex-start;
-    /* object-fit: cover; */
-}
-@media (max-width: 768px) {
+    .second_title {
+        color: rgb(140, 0, 175);
+        padding: 2rem 0 2rem 0;
+    }
     .About img {
-        /* padding: 20px 20px 20px 0; */
-
-        width: 100%;
-        height: auto;
-        justify-content: flex-start;
+        padding: 20px 20px 20px 0;
+        width: 200px;
+        float: left;
     }
-}
+    @media (max-width: 768px) {
+        .About img {
+            padding: 20px 0 20px 0;
+            width: 100%;;
+        }
+    }
+    p:first-child {
+        padding-top : 20px;
+    }
 
-/* Footer */
+/*+++ Footer +++*/
 
-footer {
-    bottom: 0;
-    position: sticky;
-}
+    footer {
+        bottom: 0;
+        position: sticky;
+    }
+    .card-footer {
+        border-top: 2px solid rgb(140, 0, 175);
+        background-color:  rgb(141, 126, 144);
+    }
+    .footer-text {
+    color: rgb(255, 255, 255);
+    }
